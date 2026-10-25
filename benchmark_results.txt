@@ -1,0 +1,54 @@
+
+============================================================
+Benchmark: 2026-10-25 18:13:10
+  customers: 1000
+  stores: 50
+  time_limit: 30.0
+  seed: 42
+  status: FEASIBLE_LIMIT
+  solver: SCIP
+  solver_seconds: 30.24
+  wall_seconds: 30.521268300013617
+  data_seconds: 0.003408200020203367
+  distance_seconds: 0.002805399999488145
+  stores_opened: 5
+  objective: 19531.83177873802
+  profit: 2288068.168221262
+  gap: 0.2826905955470138
+============================================================
+
+============================================================
+Benchmark: 2026-10-25 18:17:37
+  customers: 1000
+  stores: 50
+  time_limit: 30.0
+  seed: 42
+  status: FEASIBLE_LIMIT
+  solver: SCIP
+  solver_seconds: 30.125
+  wall_seconds: 30.449715900002047
+  data_seconds: 0.003591000015148893
+  distance_seconds: 0.002762599993729964
+  stores_opened: 5
+  objective: 19531.83177873802
+  profit: 2288068.168221262
+  gap: 0.2826905955470138
+============================================================
+
+============================================================
+Benchmark: 2026-10-25 18:18:24
+  customers: 10000
+  stores: 50
+  time_limit: 30.0
+  seed: 42
+  status: FEASIBLE_LIMIT
+  solver: SCIP
+  solver_seconds: 35.68
+  wall_seconds: 37.17704440001398
+  data_seconds: 0.029970200004754588
+  distance_seconds: 0.0357363999937661
+  stores_opened: 5
+  objective: 97217.5334484881
+  profit: 22466982.466551512
+  gap: 1.0
+============================================================

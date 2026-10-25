@@ -1,0 +1,8 @@
+streamlit>=1.40.0
+streamlit-folium>=0.20.0
+folium>=0.17.0
+ortools>=9.10.0
+numpy>=1.26.0
+plotly>=5.20.0
+pyproj>=3.6.0
+shapely>=2.0.0
