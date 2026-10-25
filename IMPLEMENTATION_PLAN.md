@@ -412,9 +412,25 @@ Local commits only; no pushes. Before each commit, inspect `git status`, stage o
 - **Files changed:** `legacy/Dark store.py`; `legacy/dark_store_customers.csv`; `legacy/dark_store_stores.csv`; `legacy/README.md`.
 - **Implemented:** Preserved original Cartesian planar prototype script and CSV files in `legacy/` subfolder with documentation, keeping root directory cleanly focused on the production geographic app.
 
+### Step 6.2 - Streamlit Community Cloud Deployment & GitHub Sync
+
+- **Status:** Complete.
+- **Files changed:** `requirements.txt`; `README.md`; `IMPLEMENTATION_PLAN.md`.
+- **Implemented:**
+  1. **Deployment Dependencies**:
+     - Broadened `requirements.txt` (`streamlit>=1.40.0`, `streamlit-folium>=0.20.0`, `folium>=0.17.0`, `ortools>=9.10.0`, `numpy>=1.26.0`, `plotly>=5.20.0`, `pyproj>=3.6.0`, `shapely>=2.0.0`) for resilient binary wheel installation across Debian/Ubuntu Linux cloud environments on Python 3.10–3.12.
+  2. **Comprehensive Documentation**:
+     - Authored project `README.md` detailing mathematical MIP formulations, sensitivity Pareto analysis, 3-tier financial KPI cards, store directory, Leaflet GIS mapping, local run commands, unit test execution, and step-by-step Streamlit Cloud deployment instructions.
+  3. **Dedicated Remote Git Repository**:
+     - Configured Git identity (`user.name=Dwij`, `user.email=drdonga16@gmail.com`).
+     - Established dedicated GitHub remote at `https://github.com/Indigamer/chennai-dark-store-optimizer.git`.
+     - Verified upstream tracking branch on `origin/main` for automated continuous deployment (instant hot-reload on `git push`).
+- **Checks:** All 54 unit tests pass in 0.044s. Upstream remote tracking verified with `git status`.
+
 ## Current Resume Point
 
-All application features (Steps 0 through 5, including Step 5.3 UI enhancements, Step 5.4 dark mode styling, Step 5.5 map & sensitivity improvements, Step 5.6 question mark and light mode fixes, Step 5.7 store HUD & camera lock-on, Step 5.8 KPI boxes, store directory, dark-mode sensitivity charts/table, and Step 5.9 Show on Map callback lifecycle fix) are fully implemented and verified with 54 passing unit tests in 0.044s. The application provides single-run optimization and full sensitivity analysis with complete Pareto front generation, multi-objective trade-off tabs, hover tooltips, high-contrast question mark icons in both Dark and Light themes, complete theme synchronization across all UI widgets and maps, high-responsiveness debounced Leaflet maps with cursor lock-on, live store quick inspector HUD cards, comprehensive dark store network directory with error-free map focus buttons, and an in-app methodology index. 10k x 50 scale solves in ~35s. Legacy Cartesian prototype files are archived in `legacy/`. Remaining optional operational items: live ORS API key verification and Streamlit Community Cloud deployment.
+All application features and deployment requirements (Steps 0 through 6, including Step 5.3 UI enhancements, Step 5.4 dark mode styling, Step 5.5 map & sensitivity improvements, Step 5.6 question mark and light mode fixes, Step 5.7 store HUD & camera lock-on, Step 5.8 KPI boxes, store directory, dark-mode sensitivity charts/table, Step 5.9 Show on Map callback lifecycle fix, Step 6.1 legacy archiving, and Step 6.2 Streamlit Cloud & GitHub deployment setup) are 100% complete, verified with 54 passing unit tests in 0.044s, and pushed to GitHub at `https://github.com/Indigamer/chennai-dark-store-optimizer`.
+
 
 
 

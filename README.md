@@ -32,33 +32,24 @@ An advanced Operations Research (OR) and geospatial intelligence platform for qu
 
 ## 🚀 How to Deploy on Streamlit Community Cloud (streamlit.io)
 
-Follow these steps to deploy the application for free on [Streamlit Community Cloud](https://share.streamlit.io):
+Follow these steps to deploy or access the application on [Streamlit Community Cloud](https://share.streamlit.io):
 
-### Step 1: Push Code to GitHub
-1. Create a repository on GitHub (e.g. `dark-store-optimization`).
-2. Push this project folder to the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: complete Chennai Dark Store Optimizer application"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
+### Deployment Configuration
+- **Repository**: `Indigamer/chennai-dark-store-optimizer`
+- **Branch**: `main`
+- **Main file path**: `app.py`
+- **App URL**: `https://chennai-dark-store-optimizer.streamlit.app`
 
-### Step 2: Deploy on Streamlit Community Cloud
-1. Sign in to [share.streamlit.io](https://share.streamlit.io) using your GitHub account.
-2. Click **"New app"** (or **"Create app"**).
-3. Fill in the deployment settings:
-   - **Repository**: `<your-username>/<repo-name>`
-   - **Branch**: `main`
-   - **Main file path**: `app.py` *(or `Dark Store Optimization/app.py` if pushed within a parent folder)*
-   - **App URL**: Choose a custom subdomain (e.g. `chennai-dark-store-optimizer.streamlit.app`).
-4. *(Optional)* Click **Advanced settings** -> **Secrets** if you wish to pre-configure an OpenRouteService API key:
-   ```toml
-   ORS_API_KEY = "your-api-key-here"
-   ```
-5. Click **"Deploy!"**. Streamlit will automatically install dependencies from `requirements.txt` and launch the app.
+### Continuous Deployment (CI/CD)
+Streamlit Cloud is linked to the `main` branch. Any future commit pushed to GitHub (`git push origin main`) will automatically trigger an instant hot-reload and redeploy of the live website within seconds.
+
+### Environment & Secrets (Optional)
+If you wish to pre-configure an OpenRouteService API key in Streamlit Cloud, go to **App Settings** -> **Secrets**:
+```toml
+ORS_API_KEY = "your-api-key-here"
+```
+*(Alternatively, operators can paste and update their API key anytime directly inside the web interface sidebar).*
+
 
 ---
 
